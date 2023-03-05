@@ -7,3 +7,15 @@
 #include "Func.h"
 
 using namespace std;
+
+//string Scramble()
+//{
+	//
+//
+	//return scramble;
+//}
+
+//string GameLoop()
+//{
+	//
+//}
