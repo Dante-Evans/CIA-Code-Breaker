@@ -26,7 +26,7 @@ int main()
 		{"Wench","Your wife"},
 		{"Hag","Your in laws"},
 		{"Congress","Abuse of power"},
-	};
+	};	
 	
 	//I tried to make this next section a function and put it in a different file but it wasn't working and I couldn't make it work.
 	srand(static_cast<unsigned int>(time(0))); //This is where I setup the random word generator
@@ -37,7 +37,7 @@ int main()
 
 	string scramble = codeBreak; //This will scarmble the word.				
 	int letters = scramble.size(); //This gets the size of the word.
-	
+
 	for (int i = 0; i < letters; ++i) //because I am unimaginative I am going to use the standard stuff for a for loop.
 	{
 		int letter1 = (rand() % letters); //first index of a letter randomly throughout the word.
@@ -46,8 +46,7 @@ int main()
 		scramble[letter1] = scramble[letter2];
 		scramble[letter2] = chosen;
 	}
-	
-		
+
 	//entering the game loop.
 	//but first how about I greet the player and give them a chance to quit before starting.
 	cout << "\t\t\t\tWelcome Operative.\n\n";
@@ -61,9 +60,7 @@ int main()
 
 	string hack;
 	cout << "\n\n\nYour hack attempt is: ";
-	cin >> hack;	
-		
-		cout << "\nYou have hacked " << hacks << " many times.\n";
+	cin >> hack;			
 
 		while ((hack != codeBreak) && (hack != "Quit"))
 		{
